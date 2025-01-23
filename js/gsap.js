@@ -1,5 +1,9 @@
 let mm = gsap.matchMedia();
 
+window.addEventListener("load", () => {
+  ScrollTrigger.refresh();
+});
+
 mm.add("(max-width: 576px)", () => {
   let aboutTl = gsap.timeline({
     scrollTrigger: {
