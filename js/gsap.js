@@ -133,6 +133,7 @@ menuToggle.addEventListener("click", () => {
       "#menu",
       {
         visibility: "visible",
+        pointerEvents: "auto",
       },
       0
     )
@@ -252,7 +253,7 @@ menuClose.forEach((close) => {
         "#menu",
         {
           visibility: "hidden",
-          duration: 0.2,
+          pointerEvents: "none",
         },
         0
       );
