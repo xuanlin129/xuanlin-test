@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="你好，我是林子軒，這是我的個人網頁，主要為個人履歷及作品呈現，若有興趣歡迎聯繫我。">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Xuan Lin">
+  <meta property="og:description" content="你好，我是林子軒，這是我的個人網頁，主要以個人履歷及作品呈現，若有興趣歡迎聯繫我。">
+  <meta property="og:url" content="https://xuanlin129.github.io/" />
+  <meta property="og:image" content="./src/images/web-view.jpg">
+  <link rel="icon" href="./src/images/favicon.ico" type="image/x-icon">
+  <title>Xuan Lin</title>
+
+  <!-- CDN -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css' />
+  <link rel="stylesheet" href="./css/locomotive-scroll.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- 主背景 -->
+  <div class="bg-main">
+    <div class="bg-base"></div>
+    <div class="bg-texture"></div>
+  </div>
+
+  <!-- header -->
+  <header id="header" class="fixed-top py-4">
+    <div class="container py-2 d-flex justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-baseline py-1" href="#">
+        <img src="./src/images/logo-name.png" alt="">
+      </a>
+      <span class="menu-toggle"><iconify-icon icon="garden:menu-fill-16"></iconify-icon></span>
+    </div>
+  </header>
+
+  <!-- menu -->
+  <nav id="menu" class="fixed-top py-4 d-flex justify-content-end align-items-center">
+    <div class="inner p-4">
+      <img src="./src/images/logo-name.png" alt="">
+      <ul>
+        <li><a href="#about" data-type="menu-close">ABOUT</a></li>
+        <li><a href="#portfolio" data-type="menu-close">PORTFOLIO</a></li>
+        <li><a href="#contact" data-type="menu-close">CONTACT</a></li>
+      </ul>
+      <div class="social d-flex justify-content-center">
+        <a href="https://github.com/xuanlin129" target="_blank"><iconify-icon icon="mdi-github"></iconify-icon></a>
+        <a href="mailto:xuan.lin129@gmail.com" target="_blank"><iconify-icon icon="mdi-email"></iconify-icon></a>
+        <a href="https://www.instagram.com/xuan_lin129" target="_blank"><iconify-icon
+            icon="mdi-instagram"></iconify-icon></a>
+      </div>
+    </div>
+    <div class="bg"></div>
+    <div class="shadow" data-type="menu-close"></div>
+    <div class="backdrop" data-type="menu-close"></div>
+    <a href="javascript:void(0)" class="menu-toggle" data-type="menu-close"><iconify-icon
+        icon="mdi-close"></iconify-icon></a>
+  </nav>
+
+  <!-- first-view -->
+  <section id="FV">
+    <!-- 影片背景 -->
+    <video class="bg" src="./src/images/sunlight.mp4" autoplay muted playsinline loop></video>
+
+    <div class="container h-100 text-center text-sm-start">
+      <div class="row h-100 d-flex align-items-center">
+        <div class="col-12 col-sm-6">
+          <h1>Xuan Lin</h1>
+          <h6 class="mt-2">Front-end Engineer / Web Designer</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- 捲動區塊 -->
+    <div class="anim-area">
+      <img class="item d-block" src="./src/images/fv-pic.jpg" alt="">
+      <img class="circle d-block" src="./src/images/fv-circle.svg" alt="">
+    </div>
+  </section>
+
+  <!-- about -->
+  <section id="about">
+    <div class="container">
+      <h2><span>About</span></h2>
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-5 position-relative">
+          <div class="personal-photo">
+            <img class="rounded-circle" src="./src/images/about.jpg" alt="">
+          </div>
+          <div class="personal-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 256 256">
+              <path fill="#514742"
+                d="M216 96a88 88 0 1 0-144 67.83V240a8 8 0 0 0 11.58 7.16L128 225l44.43 22.21a8.1 8.1 0 0 0 3.57.79a8 8 0 0 0 8-8v-76.17A87.85 87.85 0 0 0 216 96M56 96a72 72 0 1 1 72 72a72.08 72.08 0 0 1-72-72m16 0a56 56 0 1 1 56 56a56.06 56.06 0 0 1-56-56" />
+            </svg>
+            <img src="./src/images/favicon.ico" alt="">
+          </div>
+
+          <div class="text-name">
+            <h3>林子軒</h3>
+            <h3 class="ms-4">Xuan Lin</h3>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mt-4 mx-auto align-self-center">
+          <p class="lh-base">
+            畢業於淡江大學，具備HTML、CSS、JavaScript、Vue.js、API串接資料庫等技能，可以獨立完成RWD網頁與互動腳本的撰寫，建置前後端整合的網頁。
+          </p>
+          <br>
+          <p class="lh-base">
+            前端能力擅長版型建立、各元件動態互動效果、響應式網頁，未來會學習其他框架及後端相關的技能，加強自身的能力，成為全方位的人才。
+          </p>
+        </div>
+
+        <div class="resume-area col-12 col-md-5 mt-5 me-md-auto">
+          <h4 class="mb-3">工作經歷</h4>
+          <div class="resume-item">
+            <h6>前端工程師／Asian-Bridge 優橋貿易</h6>
+            <span class="timeline">2024/01-2024/12</span>
+            <p>主要為日本電商之網頁製作及維護</p>
+            <ul>
+              <li>網頁版型系統化</li>
+              <li>購物車功能開發</li>
+              <li>wordpress平台建立網頁</li>
+              <li>埋設廣告追蹤碼</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h6>化工工程師／永光化學</h6>
+            <span class="timeline">2021/07-2022/06</span>
+            <p>染料製程之過濾及精製，薄膜過濾系統之再生</p>
+          </div>
+        </div>
+
+        <div class="resume-area col-12 col-md-5 mt-5 me-md-auto">
+          <h4 class="mb-3">學歷</h4>
+          <div class="resume-item">
+            <h6>前端網頁開發技術(青年專班)／泰山職業訓練中心</h6>
+            <span class="timeline">2023/03-2023/08</span>
+            <p>經過為期半年的專業訓練，以第三名的成績畢業</p>
+          </div>
+          <div class="resume-item">
+            <h6>化學工程與材料工程碩士／淡江大學</h6>
+            <span class="timeline">2020/09-2022/07</span>
+            <ul>
+              <li>薄膜分離程序</li>
+              <li>薄膜過濾</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h6>化學工程與材料工程學士／淡江大學</h6>
+            <span class="timeline">2016/09-2020/06</span>
+            <ul>
+              <li>moldex3D 模流分析</li>
+              <li>高分子材料應用及實務</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- portfolio -->
+  <section id="portfolio">
+    <div class="container-md">
+      <h2><span>Portfolio</span></h2>
+      <h3 class="category">Website</h3>
+      <div class="row">
+        <div class="col-12 col-md-10 position-relative ms-auto">
+          <div class="swiper swiper-project">
+            <div class="swiper-wrapper"><!-- js渲染 --></div>
+          </div>
+          <div class="d-none d-md-block swiper-title">
+            <h4>煮飯研究所｜ゴハンゲンキュウシツ</h4>
+          </div>
+          <div class="swiper-logo">
+            <img src="./src/images/gohan-logo.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-12 my-4 d-md-none">
+          <h4 style="letter-spacing: 0.5em;">煮飯研究所<br><small>ゴハンゲンキュウシツ</small></h4>
+        </div>
+
+        <div class="col-12">
+          <div class="project-intro row justify-content-center">
+            <div class="col-12 col-lg-6 mt-4 mt-lg-0 order-1 order-lg-0">
+              <h5>品牌概念</h5>
+              <p class="lh-base">煮飯研究所是一個與料理緊密連結的空間，結合多樣化與食物接觸的形式，以服務內容、餐點介紹及線上購物三個方向進行網頁設計。</p>
+              <h5>功能說明</h5>
+              <ul class="lh-base">
+                <li>會員登入/註冊</li>
+                <li>購物車</li>
+                <li>查看/編輯會員資料</li>
+                <li>查詢訂單</li>
+                <li>會員管理（後台）</li>
+                <li>商品管理（後台）</li>
+                <li>訂單明細管理（後台）</li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-lg-6 order-lg-1">
+              <div class="project-list">
+                <dl>
+                  <dt>專題名稱</dt>
+                  <dd>煮飯研究所｜ゴハンゲンキュウシツ</dd>
+                </dl>
+                <dl>
+                  <dt>網站類型</dt>
+                  <dd>餐廳形象網站</dd>
+                </dl>
+                <dl>
+                  <dt>網址</dt>
+                  <dd><a class="w-100 d-block" href="https://xuanlin129.github.io/gohancooking/"
+                      target="_blank">https://xuanlin129.github.io/gohancooking/</a></dd>
+                </dl>
+                <dl>
+                  <dt>使用技術</dt>
+                  <dd>Vue、Vuetify、node.js、mongoDB</dd>
+                </dl>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <h3 class="category">Other</h3>
+      <div class="other row"><!-- js渲染 --></div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact" class="px-3">
+    <div class="container p-2 pb-4">
+      <h2><span>Contact</span></h2>
+      <form id="contact-form" class="row justify-content-center needs-validation" novalidate>
+        <div class="col-12 col-md-8 mb-3">
+          <label for="contact-name">姓名*</label>
+          <input class="form-control" type="text" name="contact-name" id="contact-name" required>
+        </div>
+        <div class="col-12 col-md-8 mb-3">
+          <label for="contact-mail">電子郵件*</label>
+          <input class="form-control" type="email" name="contact-mail" id="contact-mail" inputmode="email" required>
+        </div>
+        <div class="col-12 col-md-8 mb-3">
+          <label for="contact-title">主旨*</label>
+          <input class="form-control" type="text" name="contact-title" id="contact-title" required>
+        </div>
+        <div class="col-12 col-md-8 mb-3">
+          <label for="contact-message">內容*</label>
+          <textarea class="form-control" name="contact-message" id="contact-message" rows="5" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <input id="contact-submit" class="btn" type="submit" value="送出">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div id="footer" class="position-relative py-4">
+        <div class="row justify-content-between align-items-end">
+          <div class="col-md"></div>
+          <div class="col-12 col-md mb-3 mb-md-0 text-center mx-auto">
+            <img class="logo" src="./src/images/logo-name.png" alt="">
+          </div>
+          <div class="col-12 col-md">
+            <div class="social d-flex justify-content-center justify-content-md-end">
+              <a href="https://github.com/xuanlin129" target="_blank"><iconify-icon
+                  icon="mdi-github"></iconify-icon></a>
+              <a href="mailto:xuan.lin129@gmail.com" target="_blank"><iconify-icon icon="mdi-email"></iconify-icon></a>
+              <a href="https://www.instagram.com/xuan_lin129" target="_blank"><iconify-icon
+                  icon="mdi-instagram"></iconify-icon></a>
+            </div>
+          </div>
+        </div>
+        <div class="bg"></div>
+      </div>
+      <div id="copyright" class="position-relative text-center py-2">©Xuan Lin 2025. All Rights Reserved
+        <div class="bg"></div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- CDN -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js'></script>
+  <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+
+  <!-- JS -->
+  <script src="./js/jquery.easeScroll.js"></script>
+  <script src="./js/mobile-vh.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/gsap.js"></script>
+</body>
+
+</html>
