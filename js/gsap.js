@@ -2,6 +2,10 @@ let mm = gsap.matchMedia();
 
 window.addEventListener("load", () => {
   ScrollTrigger.refresh();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // 平滑滾動
+  });
 });
 
 mm.add("(max-width: 576px)", () => {
